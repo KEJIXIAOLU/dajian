@@ -14,13 +14,12 @@ macOS版下载地址:
 http://www.hostbuf.com/downloads/finalshell_install.pkg
 
 ## 二、安装更新运行环境
-依次输入以下代码：
 
-### Debian/Ubuntu系统执行以下命令：
+### 1、Debian/Ubuntu系统执行以下命令：
     
     apt update -y && apt install -y curl && apt install -y socat
      
-### CentOS系统执行以下命令：
+### 2、CentOS系统执行以下命令：
 
     yum update -y && yum update -y && yum install -y socat
     
