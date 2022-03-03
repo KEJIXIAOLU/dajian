@@ -68,7 +68,8 @@ http://www.hostbuf.com/downloads/finalshell_install.pkg
 - 1、如何在申请证书及密钥这一步搭建失败，检查并放行端口，口令如下：
 查看已开放的端口
 
-    firewall-cmd --list-ports
+            firewall-cmd --list-ports
+            
     
 开放端口（开放后需要要重启防火墙才生效）
 
