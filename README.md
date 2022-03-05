@@ -12,7 +12,7 @@
 - 支持CDN套用
 - 支持Fallback分流设置
 
-详情请参照VPS搭建教程：
+### 详情请参照VPS搭建教程：https://youtu.be/i5iDHRJiJ7c
 
 ## 一、 准备工作
 
