@@ -12,8 +12,6 @@
 - 支持CDN套用
 - 支持Fallback分流设置
 
-### 详情请参照VPS搭建教程：https://youtu.be/i5iDHRJiJ7c
-
 ## 一、 准备工作
 
 - 1、已经解析的域名，Win+R输入CMD 回车：键入ping 空格输入你的域名，检查一下是否可以ping通
@@ -28,8 +26,11 @@ http://www.hostbuf.com/downloads/finalshell_install.pkg
 
 ## 二、安装更新运行环境
 
+## 安装 X-ui 面板
+### 申请 SSL 证书
+下面环境的安装方式，大家根据自己的系统选择命令安装就好了。
 ### 1、Debian/Ubuntu系统执行以下命令：
-    
+     
     apt update -y && apt install -y curl && apt install -y socat
      
 ### 2、CentOS系统执行以下命令：
