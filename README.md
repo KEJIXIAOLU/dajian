@@ -12,7 +12,7 @@
 - 支持CDN套用
 - 支持Fallback分流设置
 
-## 一、 准备工作
+## 准备工作
 
 - 1、已经解析的域名，Win+R输入CMD 回车：键入ping 空格输入你的域名，检查一下是否可以ping通
 - 2、一台境外VPS主流系统，例如：Debian/Ubuntu/CentOS
@@ -24,7 +24,7 @@ http://www.hostbuf.com/downloads/finalshell_install.exe
 macOS版下载地址:
 http://www.hostbuf.com/downloads/finalshell_install.pkg
 
-## 二、安装更新运行环境
+## 安装更新运行环境
 
 ## 安装 X-ui 面板
 ### 申请 SSL 证书
