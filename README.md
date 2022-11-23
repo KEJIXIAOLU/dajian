@@ -60,7 +60,7 @@ http://www.hostbuf.com/downloads/finalshell_install.pkg
 
     bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
-### ##BBR2加速##
+### ##BBR2加速(Debian10)## 
 
     wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
  
