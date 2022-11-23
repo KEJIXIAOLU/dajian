@@ -60,9 +60,10 @@ http://www.hostbuf.com/downloads/finalshell_install.pkg
 
     bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
-### ##BBR2加速 (Debian/Ubuntu)## 
+### ##BBR2加速##
+本脚本建议在Debian≥9或是CentOS≥8以上的系统中使用
 
-    wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
+    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
  
  
 ## 注意事项
