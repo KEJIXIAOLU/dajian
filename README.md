@@ -63,9 +63,12 @@ http://www.hostbuf.com/downloads/finalshell_install.pkg
 ### ##BBR2加速##
 本脚本建议在Debian≥9或是CentOS≥8以上的系统中使用
 
-    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+          echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+          echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+          sysctl -p
+          lsmod | grep bbr
  
- 
+
 ## 注意事项
 - 1、如何在申请证书及密钥这一步搭建失败，检查并放行端口，口令如下：
 
@@ -100,3 +103,16 @@ http://www.hostbuf.com/downloads/finalshell_install.pkg
 如何遇到打不开的情况，可能是端口没有放行，用【方法1】键入停止防火墙代码，或键入开放端口代码。
 
 - 3、V2ray软件：设置——参数设置——V2rayN设置——Core类型改为Xray_Core
+
+## 更新证书
+目前证书在 60 天以后会自动更新, 你无需任何操作. 今后有可能会缩短这个时间, 不过都是自动的, 你不用关心.
+### 更新 Acme 脚本
+升级 Acme.sh 到最新版本
+
+          ~/.acme.sh/acme.sh --upgrade
+          
+如果你不想手动升级, 可以开启自动升级:
+
+          ~/.acme.sh/acme.sh  --upgrade  --auto-upgrade
+          
+之后, acme.sh 就会自动保持更新了。
