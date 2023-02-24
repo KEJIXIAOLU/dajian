@@ -18,13 +18,14 @@
 
 - 1、已经解析的域名，Win+R输入CMD 回车：键入ping 空格输入你的域名，检查一下是否可以ping通
 - 2、一台境外VPS主流系统，例如：Debian/Ubuntu/CentOS
+
+[Vultr 购买地址，点此进入](https://www.vultr.com/?ref=8941832-8H)：按时计费，最低6$/月。
+
 - 3、下载并安装FinalShell SSH工具
 
-Windows版下载地址:
-http://www.hostbuf.com/downloads/finalshell_install.exe
+Windows版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshell_install.exe)
 
-macOS版下载地址:
-http://www.hostbuf.com/downloads/finalshell_install.pkg
+macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshell_install.pkg)
 
 ## 安装更新运行环境
 
