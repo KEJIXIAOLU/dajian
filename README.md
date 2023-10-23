@@ -14,14 +14,17 @@
 
 点此进入>>[搭建X-UI视频教程](https://youtu.be/n5koU-pj094)
 
-## 准备工作
+## 一、准备工作
 
-- 1、已经解析的域名，Win+R输入CMD 回车：键入ping 空格输入你的域名，检查一下是否可以ping通
-- 2、一台境外VPS主流系统，例如：Debian/Ubuntu/CentOS
+### 1、域名一个
+
+已经解析的域名，Win+R输入CMD 回车：键入ping 空格输入你的域名，检查一下是否可以 ping 通
+
+### 2、一台境外VPS主流系统，例如：Debian/Ubuntu/CentOS
 
 [Vultr 购买地址，点此进入](https://www.vultr.com/?ref=8941832-8H)：按时计费，最低6$/月。
 
-- 3、下载并安装FinalShell SSH工具
+### 3、下载并安装FinalShell SSH工具
 
 Windows版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshell_install.exe)
 
@@ -29,8 +32,6 @@ macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshel
 
 ## 安装更新运行环境
 
-## 安装 X-ui 面板
-### 申请 SSL 证书
 下面环境的安装方式，大家根据自己的系统选择命令安装就好了。
 ### 1、Debian/Ubuntu系统执行以下命令：
      
@@ -44,6 +45,7 @@ macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshel
 
     curl https://get.acme.sh | sh
     
+## 申请 SSL 证书
 ### 申请证书及密钥
 【将代码中注释的邮箱和域名，改为你自己的】
 
@@ -59,7 +61,7 @@ macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshel
  
     ~/.acme.sh/acme.sh --installcert -d 输入你的域名 --key-file /root/private.key --fullchain-file /root/cert.crt
     
-### 安装&升级x-ui面板一键脚本
+### 安装&升级X-ui面板一键脚本
 
     bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
@@ -73,39 +75,39 @@ macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshel
  
 
 ## 注意事项
-- 1、如何在申请证书及密钥这一步搭建失败，检查并放行端口，口令如下：
+### 1、如果在申请证书及密钥这一步搭建失败，检查并放行端口，口令如下：
 
-### 放行80端口
+ 放行80端口
 
         iptables -I INPUT -p tcp --dport 80 -j ACCEPT
         
-### 放行443端口，把80改成443
+ 放行443端口，把80改成443
         
         iptables -I INPUT -p tcp --dport 443 -j ACCEPT
 
 
-查看已开放的端口
+ 查看已开放的端口
 
         firewall-cmd --list-ports
             
     
-开放端口（开放后需要要重启防火墙才生效）
+ 开放端口（开放后需要要重启防火墙才生效）
 
     firewall-cmd --zone=public --add-port=3338/tcp --permanent
     
-重启防火墙
+ 重启防火墙
 
     firewall-cmd --reload
     
-停止防火墙
+ 停止防火墙
 
     systemctl stop firewalld
     
 
-- 2、如果是全新安装，默认网页端口为 54321，用户名和密码默认都是 admin ，
+###  2、如果是全新安装，默认网页端口为 54321，用户名和密码默认都是 admin ，
 如何遇到打不开的情况，可能是端口没有放行，用【方法1】键入停止防火墙代码，或键入开放端口代码。
 
-- 3、V2ray软件：设置——参数设置——V2rayN设置——Core类型改为Xray_Core
+###  3、V2ray软件：设置——参数设置——V2rayN设置——Core类型改为Xray_Core
 
 ## 更新证书
 目前证书在 60 天以后会自动更新, 你无需任何操作. 今后有可能会缩短这个时间, 不过都是自动的, 你不用关心.
