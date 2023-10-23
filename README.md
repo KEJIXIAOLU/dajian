@@ -30,6 +30,8 @@ Windows版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalsh
 
 macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshell_install.pkg)
 
+## 二、搭建步骤
+
 ## 安装更新运行环境
 
 下面环境的安装方式，大家根据自己的系统选择命令安装就好了。
@@ -74,7 +76,8 @@ macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshel
           lsmod | grep bbr
  
 
-## 注意事项
+## 三、注意事项
+
 ### 1、如果在申请证书及密钥这一步搭建失败，检查并放行端口，口令如下：
 
  放行80端口
