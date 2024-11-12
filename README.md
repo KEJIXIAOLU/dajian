@@ -65,7 +65,8 @@ macOS版下载地址：[点此下载](http://www.hostbuf.com/downloads/finalshel
     
 ### 安装&升级X-ui面板一键脚本
 
-    bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+
 
 ### ##BBR2加速##
 本脚本建议在Debian≥9或是CentOS≥8以上的系统中使用
